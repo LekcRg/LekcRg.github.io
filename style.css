@@ -1,7 +1,8 @@
 body{
-	height: 100%;
 	background-color: #050714;
 	background: url(img/bg.jpg) no-repeat center center fixed;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
