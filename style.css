@@ -15,12 +15,12 @@
 	margin: 0;
 }
 body{
+	height: 100%;
 	background: url(img/bg.jpg) no-repeat center top fixed, #050714;
 	-webkit-background-size: cover; 
 	-moz-background-size: cover; 
 	-o-background-size: cover; 
 	background-size: cover;
-	position: relative;
 }
 .logo svg{
 	margin: auto;
