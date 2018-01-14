@@ -1,3 +1,15 @@
+@font-face{
+	font-family: "Roboto-Regular";
+	src: url(fonts/Roboto-Regular.ttf);
+}
+@font-face{
+	font-family: "Roboto-Light";
+	src: url(fonts/Roboto-Light.ttf);
+}
+@font-face{
+	font-family: "CourierNewPSMT";
+	src: url(fonts/cour.ttf);
+}
 html{
 	padding: 0;
 	margin: 0;
@@ -18,6 +30,11 @@ body{
 	position: absolute;
 	top: 0; left: 0; bottom: 0; right: 0;
 	height: 110px;
+}
+.logo span{
+	font-size: 110px;
+	color: white;
+	font-family: "Roboto-Light";
 }
 @media only screen and (max-width: 767px) {
 	body {
