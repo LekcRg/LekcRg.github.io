@@ -10,18 +10,16 @@
 	font-family: "CourierNewPSMT";
 	src: url(fonts/cour.ttf);
 }
-html{
+*{
 	padding: 0;
 	margin: 0;
 }
-body{
-	margin: 0;
-	padding: 0;
+html{
 	background: url(img/bg.jpg) no-repeat center top fixed, #050714;
 	-webkit-background-size: cover; 
 	-moz-background-size: cover; 
 	-o-background-size: cover; 
-	background-size: cover; 
+	background-size: cover;
 }
 .logo svg{
 	margin: auto;
