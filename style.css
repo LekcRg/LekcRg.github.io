@@ -18,10 +18,6 @@ body{
 	margin: 0;
 	padding: 0;
 	background: url(img/bg.jpg) no-repeat center top fixed, #050714;
-	-webkit-background-size: 100%; 
-    -moz-background-size: 100%; 
-    -o-background-size: 100%; 
-    background-size: 100%; 
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
     -o-background-size: cover; 
