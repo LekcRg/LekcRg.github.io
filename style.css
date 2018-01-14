@@ -17,11 +17,7 @@ html{
 body{
 	margin: 0;
 	padding: 0;
-	background-image: url(img/bg.jpg);
-	background-position: center center;
-	background-attachment: fixed;
-	background-size: cover;
-	background-color: #050714;
+	background: url(img/bg.jpg) center center fixed, #050714;
 }
 .logo svg{
 	margin: auto;
