@@ -34,4 +34,8 @@ body{
 	body {
 		background-image: url(img/bg-min.jpg);
 	}
+	.logo svg{
+		width: 85%;
+		height: auto;
+	}
 }
