@@ -310,6 +310,7 @@ h4{
 footer{
   background: #131415;
   height: 88px;
+  min-width: 1060px;
 }
 .footer__loftschool{
   width: 250px;
@@ -357,6 +358,7 @@ footer{
 }
 .footer__social-icons ul{
   float: right;
+  
 }
 .footer__social-icons li{
   display: inline-block;
