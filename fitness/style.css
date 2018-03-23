@@ -81,7 +81,7 @@ header{
   font-size: 12px;
   font-weight: bold;
 }
-.header__navigation a:hover{
+.header__navigation li:hover a{
   color: #f89513;
   transition: all 0.2s ease-out;
 }
@@ -98,7 +98,7 @@ header{
   vertical-align: middle;
 }
 .main-icon{
-  background-image: url(img/main-icon.svg);
+  background-image: url(img/main-icon-hover.svg);
 }
 .reviews-icon{
   background-image: url(img/reviews-icon.svg);
@@ -110,6 +110,14 @@ header{
   display: inline-block;
   list-style-type: circle;
   list-style-image: url(img/main-icon.svg);
+}
+.header__navigation li:hover .reviews-icon{
+  background-image: url(img/reviews-icon-hover.svg);
+  transition: all 0.2s ease-out;
+}
+.header__navigation li:hover .services-icon{
+  background-image: url(img/services-icon-hover.svg);
+  transition: all 0.2s ease-out;
 }
 .header__about{
   float: right;
