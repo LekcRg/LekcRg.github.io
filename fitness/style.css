@@ -39,7 +39,7 @@ h3{
 /* ---------- Header ---------- */
 header{
   z-index: 1;
-  min-width: 1060px;
+  min-width: 1100px;
   height: 77px;
   background-color: #131415;
 }
@@ -179,6 +179,7 @@ nav a:hover{
 }
 /* ---------- Banner ---------- */
 .banner{
+  min-width: 1100px;
   background-image: url(img/banner.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -186,7 +187,7 @@ nav a:hover{
 }
 /* ---------- Features ---------- */
 .features{
-  min-width: 1060px;
+  min-width: 1100px;
   background-color: #131415;
   padding-bottom: 100px;
   margin: auto;
@@ -368,6 +369,7 @@ h4{
 footer{
   background: #131415;
   height: 89px;
+  min-width: 1100px;
 }
 .footer__loftschool{
   width: 250px;
