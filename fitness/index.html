@@ -15,19 +15,26 @@
       <div class="header__nav">
         <nav> 
           <li>
-            <span  class="main-icon nav-icon"></span><a href="#" class="header__active">Главная</a>
+            <span  class="main-icon nav-icon"></span>
+            <a href="#" class="header__active non-click">Главная</a>
           </li>
           <li>
-            <span  class="reviews-icon nav-icon"></span><a href="#">Отзывы</a>
+            <span  class="reviews-icon nav-icon"></span>
+            <a href="#">Отзывы</a>
           </li>
           <li>
-            <span  class="services-icon nav-icon"></span><a href="#">Услуги</a>
+            <span  class="services-icon nav-icon"></span>
+            <a href="#">Услуги</a>
           </li>
         </nav>
       </div>
       <div class="header__about">
         <a href="tel:+78000039210" class="header__phone">8 (800) 00-392-10</a>
         <p class="header__time">График работы</p>
+        <div class="header__time-block">
+          <p class="header__work">пн-вс: 09:00-20:00</p>
+          <p class="header__do-not-work">обед: 14:00-14:30</p>
+        </div>
       </div>
     </div>
   </header>
@@ -117,7 +124,13 @@
       </div>
       <div class="pagination">
         <ul>
-          <li><a href="#" class="non-click"><img class="pagination__opacity" src="img/prefer.svg" alt=""></a></li>
+          <li>
+            <a href="#" class="non-click">
+              <svg class="paginator__arrow paginator__arrow-left" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 15.584 25.291" xml:space="preserve">
+              <polyline points="12.976,2.107,2.605,12.479 12.976,22.85 "/></svg>
+            </a>
+          </li>
           <li class="pagination__active non-click"><a href="#" class="non-click">1</a></li>
           <li><a href="#">2</a></li>
           <li><a href="#">3</a></li>
@@ -125,7 +138,13 @@
           <li><a href="#">5</a></li>
           <li><a href="#">6</a></li>
           <li><a href="#">7</a></li>
-          <li><a href="#"><img src="img/next.svg" alt=""></a></li>
+          <li>
+            <a href="#">
+              <svg class="paginator__arrow paginator__arrow-right" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 15.792 25.708" xml:space="preserve">
+              <polyline points="2.754,2.378,13.125,12.75 2.754,23.121 "/></svg>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
