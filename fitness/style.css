@@ -205,13 +205,14 @@ header{
 }
 .features__block{
   width: 195px;
-  display: inline-block;
+  display: inline-grid;
   margin-right: 70px;
 }
 .features__block:last-child{
   margin-right: 0;
 }
 .f-icon{
+  margin: 0 auto;
   background-color: #f89513;
   border-radius: 50%;
   width: 28px;
@@ -380,6 +381,7 @@ footer{
   background: #131415;
   height: 90px;
   min-width: 1100px;
+  overflow: hidden;
 }
 .footer__loftschool{
   width: 250px;
