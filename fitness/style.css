@@ -57,19 +57,19 @@ header{
   display: inline-block;
   text-align: center;
 }
-nav{
+.header__navigation{
   text-align: center;
   display: inline-block;
 }
-nav li{
+.header__navigation li{
   display: inline-block;
   vertical-align: middle;
   margin: 22px 28px 22px 0;
 }
-nav li:last-child{
+.header__navigation li:last-child{
   margin-right: 0;
 }
-nav a{
+.header__navigation a{
   display: inline-block;
   color: #fff;
   letter-spacing: 1.2px;
@@ -81,12 +81,12 @@ nav a{
   font-size: 12px;
   font-weight: bold;
 }
-nav a:hover{
+.header__navigation a:hover{
   color: #f89513;
   transition: all 0.2s ease-out;
 }
 .header__active{
-  color: #f89513;
+  color: #f89513!important;
 }
 .nav-icon{
   width: 19px;
