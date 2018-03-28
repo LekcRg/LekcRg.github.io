@@ -34,18 +34,13 @@ li{
   color: #fff;
 }
 .wrapper{
-  margin: 0 auto;
   min-width: 1100px;
   min-height: 100%;
-  height: auto !important;
-  height: 100%;
   font-family: 'Open Sans', 'Roboto', sans-serif;
 }
 .container{
-  width: 1100px;
+  width: 1060px;
   min-height: 100%;
-  height: auto !important;
-  height: 100%;
   position: relative;
   margin: 0 auto;
 }
@@ -54,6 +49,7 @@ li{
 }
 /* ---------- Header ---------- */
 header{
+  width: 100%;
   min-width: 1100px;
   height: 75px;
   background-color: #131415;
@@ -67,7 +63,7 @@ header{
   height: 75px;
 }
 .header__nav{
-  width: 760px;
+  width: 720px;
   text-align: center;
   float: left;
   padding-top: 27px;
@@ -200,7 +196,7 @@ header{
 }
 /* ---------- Banner ---------- */
 .banner{
-  min-width: 1100px;
+  min-width: 100%;
   background-image: url(../img/banner.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -225,21 +221,26 @@ header{
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.features__item{
-  list-style-type: disc;
-  font-size: 18px;
-  font-family: 'Open Sans', sans-serif;
-  line-height: 34px;
-  list-style-position: inside;
+.features__list{
+  margin: 0 auto;
+  width: 740px;
 }
 .features__block{
   width: 195px;
-  display: inline-block;
+  float: left;
   margin-right: 70px;
   vertical-align: top;
 }
 .features__block:last-child{
   margin-right: 0;
+}
+.features__item{
+  margin: 0 auto;
+  list-style-type: disc;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 34px;
+  list-style-position: inside;
 }
 .features__icon-wrapper{
   margin: 0 auto;
@@ -260,7 +261,7 @@ header{
   color: #fff;
   margin-bottom: 4px;
 }
-.features__list{
+.features__block-list{
   color: #fff;
   text-align: left;
 }
@@ -305,7 +306,6 @@ header{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  display: inline-block;
   float: left;
 }
 .news__pic{
@@ -454,7 +454,6 @@ footer{
 }
 .footer__loftschool{
   width: 250px;
-  display: inline-block;
   float: left;
   padding: 13px 0;
   line-height: 17px;
@@ -471,15 +470,13 @@ footer{
   color: #fff;
 }
 .footer__logo{
-  display: inline-block;
   margin: 0 auto;
   width: 560px;
   text-align: center;
   height: 80px;
-  overflow: hidden;
+  float: left;
 }
 .footer__social{
-  vertical-align: middle;
   width: 250px;
   float: right;
   padding: 10px 0;
@@ -497,7 +494,7 @@ footer{
 }
 .footer__social_item{
   text-align-last: left;
-  display: inline-block;
+  float: right;
   text-align: center;
   margin-right: 7px;
 }
