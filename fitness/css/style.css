@@ -118,7 +118,7 @@ header{
   background-image: url(/img/main-icon-hover.svg);
 }
 .reviews-icon{
-  background-image: url(/img/reviews-icon.svg);
+  background-image: url(img/reviews-icon.svg);
 }
 .services-icon{
   background-image: url(/img/services-icon.svg);
@@ -207,7 +207,7 @@ header{
 /* ---------- Banner ---------- */
 .banner{
   min-width: 1100px;
-  background-image: url(/img/banner.png);
+  background-image: url(./img/banner.png);
   background-repeat: no-repeat;
   background-position: center;
   height: 623px;
