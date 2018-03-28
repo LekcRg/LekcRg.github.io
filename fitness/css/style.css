@@ -60,7 +60,6 @@ header{
 }
 .header__logo{
   width: 160px;
-  display: inline-block;
   float: left;
 }
 .logo{
@@ -68,15 +67,13 @@ header{
   height: 75px;
 }
 .header__nav{
-  width: 720px;
-  display: inline-block;
+  width: 760px;
   text-align: center;
   float: left;
   padding-top: 27px;
 }
 .header__navigation{
   text-align: center;
-  display: inline-block;
 }
 .navigation__item{
   display: inline-block;
@@ -87,7 +84,6 @@ header{
   margin-right: 0;
 }
 .navigation__link{
-  display: inline-block;
   color: #fff;
   letter-spacing: 1.2px;
   font-weight: bold;
@@ -124,7 +120,6 @@ header{
   background-image: url(../img/services-icon.svg);
 }
 .main-icon{
-  display: inline-block;
   list-style-type: circle;
   list-style-image: url(../img/main-icon.svg);
 }
@@ -138,9 +133,8 @@ header{
 }
 .header__about{
   float: right;
-  display: inline-block;
   text-align: right;
-  width: 175px;
+  width: 180px;
   vertical-align: middle;
   padding-top: 16px;
 }
