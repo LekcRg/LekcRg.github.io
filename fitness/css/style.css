@@ -115,25 +115,25 @@ header{
   vertical-align: middle;
 }
 .main-icon{
-  background-image: url(/img/main-icon-hover.svg);
+  background-image: url(./img/main-icon-hover.svg);
 }
 .reviews-icon{
-  background-image: url(/img/reviews-icon.svg);
+  background-image: url(./img/reviews-icon.svg);
 }
 .services-icon{
-  background-image: url(/img/services-icon.svg);
+  background-image: url(./img/services-icon.svg);
 }
 .main-icon{
   display: inline-block;
   list-style-type: circle;
-  list-style-image: url(/img/main-icon.svg);
+  list-style-image: url(./img/main-icon.svg);
 }
 .navigation__item:hover .reviews-icon{
-  background-image: url(/img/reviews-icon-hover.svg);
+  background-image: url(./img/reviews-icon-hover.svg);
   transition: all 0.2s ease-out;
 }
 .navigation__item:hover .services-icon{
-  background-image: url(/img/services-icon-hover.svg);
+  background-image: url(./img/services-icon-hover.svg);
   transition: all 0.2s ease-out;
 }
 .header__about{
@@ -207,7 +207,7 @@ header{
 /* ---------- Banner ---------- */
 .banner{
   min-width: 1100px;
-  background-image: url(/img/banner.png);
+  background-image: url(./img/banner.png);
   background-repeat: no-repeat;
   background-position: center;
   height: 623px;
