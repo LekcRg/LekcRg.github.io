@@ -1,0 +1,65 @@
+.navigation_wrapper{
+  width: 720px;
+  text-align: center;
+  float: left;
+  padding-top: 27px;
+}
+.navigation{
+  text-align: center;
+}
+.navigation__item{
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 28px;
+}
+.navigation__item:last-child{
+  margin-right: 0;
+}
+.navigation__link{
+  color: #fff;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-decoration: none;
+  font-family: 'Open Sans';
+  font-size: 12px;
+  font-weight: bold;
+}
+.navigation__item:hover .navigation__link{
+  color: #f89513;
+  transition: all 0.2s ease-out;
+}
+.is-active{
+  color: #f89513!important;
+}
+.nav-icon{
+  width: 19px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.main-icon{
+  background-image: url(../../img/main-icon-hover.svg);
+}
+.reviews-icon{
+  background-image: url(../../img/reviews-icon.svg);
+}
+.services-icon{
+  background-image: url(../../img/services-icon.svg);
+}
+.main-icon{
+  list-style-type: circle;
+  list-style-image: url(../../img/main-icon.svg);
+}
+.navigation__item:hover .reviews-icon{
+  background-image: url(../../img/reviews-icon-hover.svg);
+  transition: all 0.2s ease-out;
+}
+.navigation__item:hover .services-icon{
+  background-image: url(../../img/services-icon-hover.svg);
+  transition: all 0.2s ease-out;
+}

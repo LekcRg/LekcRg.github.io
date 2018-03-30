@@ -1,0 +1,65 @@
+/* ---------- Footer ---------- */
+footer{
+  background: #131415;
+  height: 90px;
+  min-width: 1100px;
+  overflow: hidden;
+  margin-top: -90px;
+}
+.footer__loftschool{
+  width: 250px;
+  float: left;
+  padding: 13px 0;
+  line-height: 17px;
+}
+.footer__loftschool-text{
+  color: #fff;
+  font-family: 'Open Sans';
+  font-weight: lighter;
+  font-size: 14px;
+}
+.footer__loftschool-link{
+  font-weight: bold;
+  text-decoration: underline;
+  color: #fff;
+}
+.footer__logo{
+  margin: 0 auto;
+  width: 560px;
+  text-align: center;
+  height: 80px;
+  float: left;
+}
+.footer__social{
+  width: 250px;
+  float: right;
+  padding: 10px 0;
+}
+.footer__social-text{
+  color: #fff;
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-size: 14px;
+  text-align: right;
+  margin-bottom: 10px;
+}
+.footer__social_list{
+  float: right;
+}
+.footer__social_item{
+  text-align-last: left;
+  float: right;
+  text-align: center;
+  margin-right: 7px;
+}
+.footer__social svg{
+  fill: #d0d0d0;
+  width: 20px;
+}
+.footer__social svg:hover{
+  fill: #f89513;
+  transition: all 0.4s ease-out;
+}
+.footer__social-item:last-child{
+  margin-right: 0;
+}

@@ -1,0 +1,33 @@
+.news__top{
+  width: 160px;
+  float: right;
+}
+.top__name{
+  font-family: 'Open Sans';
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.top__month{
+  font-family: 'Open Sans';
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #656464;
+  font-weight: bold;
+  margin-bottom: 19px;
+}
+.top__image{
+  opacity: 0.8;
+  width: 160px;
+  height: 160px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 20px;
+}
+.top__image:last-child{
+  margin-bottom: 0;
+}
