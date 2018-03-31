@@ -27,6 +27,7 @@
   line-height: 153px;
   color: #fff;
   border-radius: 5px;
+  text-transform: uppercase;
 }
 .services__small-name{
   color: #221f1f;
