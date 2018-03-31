@@ -1,6 +1,6 @@
 .banner{
   min-width: 100%;
-  background-image: url(../../img/banner/banner-bg.png);
+  background-image: url(../../img/banner-bg.png);
   background-repeat: no-repeat;
   background-position: center;
   height: 623px;
@@ -18,7 +18,7 @@
   font-size: 244px;
 }
 .banner__text:after{
-  content: url(../../img/banner/banner-img.png);
+  content: url(../../img/banner-img.png);
   position: absolute;
   margin: auto;
   top: 0;bottom: 0;right: 0;left: 0;
