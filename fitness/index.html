@@ -18,22 +18,22 @@
         <nav class="navigation_wrapper">
           <ul class="navigation"> 
             <li class="navigation__item">
-              <span  class="main-icon nav-icon"></span>
+              <span  class="main-icon-active nav-icon"></span>
               <a href="#" class="navigation__link is-active non-click">Главная</a>
             </li>
             <li class="navigation__item">
               <span  class="reviews-icon nav-icon"></span>
-              <a href="#" class="navigation__link">Отзывы</a>
+              <a href="/reviews.html" class="navigation__link">Отзывы</a>
             </li>
             <li class="navigation__item">
               <span  class="services-icon nav-icon"></span>
-              <a href="#" class="navigation__link">Услуги</a>
+              <a href="/services.html" class="navigation__link">Услуги</a>
             </li>
           </ul>
         </nav>
         <div class="header__about">
           <a href="tel:+78000039210" class="header__phone">8 (800) 00-392-10</a>
-          <p class="header__time">График работы</p>
+          <span class="header__time">График работы</span>
           <address class="header__time-block">
             <p class="header__work">пн-вс: 09:00-20:00</p>
             <p class="header__do-not-work">обед: 14:00-14:30</p>
@@ -135,19 +135,25 @@
               </ul>
             </div>
           <!-- top news -->
-          <aside class="news__top">
+          <div class="news__top">
             <h3 class="top__name">Топ новостей</h3>
             <span class="top__month">За сентябрь</span>
-            <div class="top__image" style="background-image:url(img/top-n1.jpg)">
-              <!-- <img src="img/top-n1.jpg" alt="top 1 image" class="top__img"> -->
-            </div>
-            <div class="top__image" style="background-image:url(img/top-n2.jpg)">
-              <!-- <img src="img/top-n2.jpg" alt="top 2 image" class="top__img"> -->
-            </div>
-            <div class="top__image" style="background-image:url(img/top-n3.jpg)">
-              <!-- <img src="img/top-n3.jpg" alt="top 3 image" class="top__img"> -->
-            </div>
-          </aside>
+            <a class="top__link" href="#">
+              <div class="top__image" style="background-image:url(img/top-n1.jpg)">
+                <img src="img/top-n1.jpg" alt="top 1 image" class="top__img">
+              </div>
+            </a>
+            <a class="top__link" href="#">
+              <div class="top__image" style="background-image:url(img/top-n2.jpg)">
+                <img src="img/top-n2.jpg" alt="top 2 image" class="top__img">
+              </div>
+            </a>
+            <a class="top__link" href="#">
+              <div class="top__image" style="background-image:url(img/top-n3.jpg)">
+                <img src="img/top-n3.jpg" alt="top 3 image" class="top__img">
+              </div>
+            </a>
+          </div>
         </div>
       </section>
       <div class="pagination">
@@ -195,7 +201,7 @@
       <div class="container">
         <div class="footer__loftschool">
           <p class="footer__loftschool-text">
-              Сделано с любовью и старанием на курсе «HTML + CSS» в <a class="footer__loftschool-link" href="https://loftschool.com">LoftSchool</a>. Автор работы: <b>Романов Алексей</b>
+              Сделано с любовью и старанием на курсе «HTML + CSS» в <a class="footer__loftschool-link" href="https://loftschool.com">LoftSchool</a>. Автор работы: <strong>Романов Алексей</strong>
           </p>
         </div>
         <div class="footer__logo">

@@ -41,16 +41,17 @@ header{
   transition: all 0.2s ease-out;
 }
 .header__time:hover+.header__time-block{
-  display: block;
+  opacity: 1;
+  transition: all 0.2s ease-out;
 }
 .header__time-block{
-  display: none;
+  opacity: 0;
   font-size: 14px;
   text-align-last: left;
   margin-top: 12px;
   position: relative;
   height: 75px;
-  width: 180x;
+  width: 180px;
   border-radius: 5px;
   padding: 15px 0 0 25px;
   font-family: 'Open Sans';

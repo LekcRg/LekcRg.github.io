@@ -19,15 +19,18 @@
   font-weight: bold;
   margin-bottom: 19px;
 }
+.top__img{
+  width: 160px;
+  visibility: hidden;
+}
 .top__image{
   opacity: 0.8;
   width: 160px;
-  height: 160px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 20px;
 }
-.top__image:last-child{
+.top__link:last-child .top__image{
   margin-bottom: 0;
 }

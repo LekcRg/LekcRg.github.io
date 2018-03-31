@@ -11,3 +11,6 @@
 @import url('blocks/top-news.css');
 @import url('blocks/pagination.css');
 @import url('blocks/footer.css');
+@import url('blocks/breadcrumbs.css');
+@import url('blocks/services.css');
+@import url('blocks/reviews.css')
