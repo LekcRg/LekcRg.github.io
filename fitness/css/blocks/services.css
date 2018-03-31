@@ -1,0 +1,42 @@
+.services__item{
+  float: left;
+  width: 250px;
+  margin-right: 65px;
+  margin-bottom: 50px;
+}
+.services__list{
+  margin-bottom: 20px;
+}
+.services__item:nth-child(3n+3){
+  margin-right: 0;
+}
+.services__pic{
+  height: 153px;
+  background-color: #000;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+.services__big-name{
+  width: 250px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 153px;
+  line-height: 153px;
+  color: #fff;
+  border-radius: 5px;
+}
+.services__small-name{
+  color: #221f1f;
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-style: 18px;
+  margin-bottom: 15px;
+}
+.services__item p{
+  font-family: 'Open Sans';
+  font-weight: lighter;
+  font-size: 14px;
+}

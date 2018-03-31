@@ -1,0 +1,24 @@
+.partners{
+  width: 880px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.partners__item{
+  float: left;
+  margin-right: 65px;
+  margin-bottom: 50px;
+}
+.partners__item:nth-child(3n+3){
+  margin-right: 0;
+}
+.partners__logo{
+  width: 250px;
+  height: 65px;
+  vertical-align: middle;
+  margin: 0 auto;
+  filter: grayscale(100%);
+}
+.partners__logo:hover{
+  filter: grayscale(0%);
+  transition: all .3s ease-out;
+}
