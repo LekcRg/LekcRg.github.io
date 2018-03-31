@@ -1,4 +1,6 @@
-.reviews{
+.reviews .news__post:after{
   width: 880px;
-  margin: 0 auto;
+}
+.reviews{
+  margin-bottom: 50px;
 }

@@ -8,6 +8,7 @@ header{
 .header__logo{
   width: 160px;
   float: left;
+  height: 75px;
 }
 .header__about{
   float: right;
@@ -49,7 +50,7 @@ header{
   font-size: 14px;
   text-align-last: left;
   margin-top: 12px;
-  position: relative;
+  position: absolute;
   height: 75px;
   width: 180px;
   border-radius: 5px;

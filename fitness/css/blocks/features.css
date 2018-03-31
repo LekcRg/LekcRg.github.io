@@ -39,6 +39,7 @@
   list-style-position: inside;
 }
 .features__icon-wrapper{
+  position: relative;
   margin: 0 auto;
   background-color: #f89513;
   border-radius: 50%;
@@ -46,9 +47,11 @@
   height: 68px;
   overflow: hidden;
   margin-bottom: 42px;
-  padding-top: 18px;
 }
 .features__icon{
+  left: 0;right: 0;top: 0;bottom: 0;
+  margin: auto;
+  position: absolute;
   height: 31px;
 }
 .features__text{

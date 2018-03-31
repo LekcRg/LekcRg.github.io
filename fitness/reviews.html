@@ -17,17 +17,14 @@
         </div>
         <nav class="navigation_wrapper">
           <ul class="navigation"> 
-            <li class="navigation__item">
-              <span  class="main-icon nav-icon"></span>
-              <a href="/index.html" class="navigation__link">Главная</a>
+            <li class="navigation__item ">
+              <a href="./" class="navigation__link main-icon">Главная</a>
+            </li>
+            <li class="navigation__item navigation__item--active">
+              <a href="./reviews.html" class="navigation__link reviews-icon">Отзывы</a>
             </li>
             <li class="navigation__item">
-              <span  class="reviews-icon-active nav-icon"></span>
-              <a href="#" class="navigation__link is-active non-click">Отзывы</a>
-            </li>
-            <li class="navigation__item">
-              <span  class="services-icon nav-icon"></span>
-              <a href="/services.html" class="navigation__link">Услуги</a>
+              <a href="./services.html" class="navigation__link services-icon">Услуги</a>
             </li>
           </ul>
         </nav>
@@ -41,27 +38,119 @@
         </div>
       </div>
     </header>
+    
+    <div class="container clearfix">
+      <section class="reviews inner-page clearfix">  
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a href="./" class="breadcrumbs__link">Главная</a>
+            </li>
+            <li class="breadcrumbs__item breadcrumbs--active">
+              <a href="#" class="breadcrumbs__link">Отзывы</a>
+            </li>
+          </ul>
+        </div>
+        <h1>Отзывы</h1>
+        <div class="news__left">
+          <ul class="news__list">
+            <li class="news__post">
+              <div class="news__image" style="background-image:url(img/avatars/1.jpg)">
+                
+              </div>
+              <div class="news__content">
+                <span class="news__date">12.10.2016</span>
+                <h4 class="news__name">Алексей Воронов</h4>
+                <p class="news__text">
+                  Пришел, чтобы похудеть немного к лету, но благодаря тренеру Александру Ковалеву, получилось накачать нормальные банки. Втянулся, теперь занимаюсь регулярно, 2 раза в неделю, доволен и всем советую. Кстати, польза от тренировок намного заметнее, если придерживаться ПП. Рацион мне составили на неделю, но я его повторяю, не надоедает.
+                </p>
+              </div>
+            </li>
+            <li class="news__post">
+              <div class="news__image" style="background-image:url(img/avatars/2.jpg)">
+                
+              </div>
+              <div class="news__content">
+                <span class="news__date">01.02.2016</span>
+                <h4 class="news__name">Инна Смольная</h4>
+                <p class="news__text">
+                  Подарили на день рождения абонемент в бассейн, пришлось воспользоваться. Сама бы я сюда не пришла, не очень нравится плавать с мужиками, которые пялятся постоянно, администрации следует обратить внимание на этот вопрос! Еще бросилось в глаза хамство обслуживающего персонала. Уборщица в раздевалке вела себя, как будто это к ней в гости пришли.
+                </p>
+              </div>
+            </li>
+            <li class="news__post">
+              <div class="news__image" style="background-image:url(img/avatars/default.jpg)">
+                
+              </div>
+              <div class="news__content">
+                <span class="news__date">22.12.2015</span>
+                <h4 class="news__name">Владимир Савельев</h4>
+                <p class="news__text">
+                  Норм клуб, железа хватает, но техника устаревшая. За эту цену – прокатит. Если хотите большего, то обращайтесь в специализированные тренажерки с новым железом и европейской техникой.
+                </p>
+              </div>
+            </li>
+            <li class="news__post">
+              <div class="news__image" style="background-image:url(img/avatars/3.jpg)">
+                <!-- <img src="img/news3.jpg" alt="img for 1 news" class="news__pic"> -->
+              </div>
+              <div class="news__content">
+                <span class="news__date">14.08.2015</span>
+                <h4 class="news__name">Ирина Савина</h4>
+                <p class="news__text">
+                  Занимаюсь 4й месяц на петлях ТРХ и очень нравится результат. Даже знакомые отметили, что я помолодела, появилась талия, ножки постройнели. Нагрузка сначала была непривычная, но втягиваешься быстро, тем более, что отражение в зеркале радует. Цены приятные, а если платить на полгода вперед, то вообще выгодно получается, скидка почти 30%. 
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-    <div class="reviews">
-      <div class="container">
-          <div class="breadcrumbs">
-              <ul class="breadcrumbs__list">
-                <li class="breadcrumbs__item">
-                  <a href="#" class="breadcrumbs__link">Главная</a>
-                </li>
-                <li class="breadcrumbs__item">
-                  <a href="#" class="breadcrumbs__link non-click is-active">Услуги</a>
-                </li>
-              </ul>
-            </div>
+      <div class="pagination">
+        <p class="pagination__choised-page">
+          Страница 1 из 7
+        </p>
+        <ul class="pagination__list">
+          <li class="pagination__item">
+            <a href="#" class="pagination__link non-click">
+              <svg class="paginator__arrow paginator__arrow-left" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.584 25.291" xml:space="preserve"><polyline points="12.976,2.107,2.605,12.479 12.976,22.85 "/></svg>
+            </a>
+          </li>
+          <li class="pagination__item pagination__active">
+            <a href="#" class="pagination__link non-click">1</a>
+          </li>
+          <li class="pagination__item">
+            <a href="#" class="pagination__link">2</a>
+          </li>
+          <li class="pagination__item">
+            <a href="#" class="pagination__link">3</a>
+          </li>
+          <li class="pagination__item">
+            <a href="#" class="pagination__link">4</a>
+          </li>
+          <li class="pagination__item">
+            <a href="#" class="pagination__link">5</a>
+          </li>
+          <li class="pagination__item">
+            <a href="#" class="pagination__link">6</a>
+          </li>
+          <li class="pagination__item">
+            <a href="#" class="pagination__link">7</a>
+          </li>
+          <li class="pagination__item">
+            <a href="#" class="pagination__link">
+              <svg class="paginator__arrow paginator__arrow-right" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.792 25.708" xml:space="preserve"><polyline points="2.754,2.378,13.125,12.75 2.754,23.121 "/></svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
-
+  
   </div>
   <!-- конец враппера -->
 
     <footer>
-      <div class="container">
+      <div class="container clearfix">
         <div class="footer__loftschool">
           <p class="footer__loftschool-text">
               Сделано с любовью и старанием на курсе «HTML + CSS» в <a class="footer__loftschool-link" href="https://loftschool.com">LoftSchool</a>. Автор работы: <b>Романов Алексей</b>

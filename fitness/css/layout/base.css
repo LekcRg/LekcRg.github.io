@@ -16,11 +16,28 @@ body, html{
 strong{
   font-weight: bold;
 }
+h1{
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-size: 49px;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
 li{
   list-style-type: none;
 }
 address{
   font-style: normal;
+}
+.inner-page{
+  padding-top: 41px;
+  width: 880px;
+  margin: 0 auto;
+}
+.inner-page .breadcrumbs{
+  margin-bottom: 16px;
 }
 .clearfix:after{
   content: '';
