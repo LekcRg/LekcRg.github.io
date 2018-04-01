@@ -35,39 +35,40 @@
   pointer-events: none;
 }
 .navigation__link:before{
+  content:'';
+  background-image:url('../../img/icons.svg');
+  background-repeat:no-repeat;
   display: inline-block;
   vertical-align: middle;
   margin-right: 15px;
   width: 20px;
-}
-.navigation__link:before:hover{
-  transition: all 1s ease-out;
+  height: 20px;
+  margin-top: -4px;
 }
 .main-icon:before{
-  content: url('../../img/main-icon.svg');
+  background-position: 0 -20px;
 }
 .reviews-icon:before{
-  content: url('../../img/reviews-icon.svg');
+  background-position:0 -60px;  
 }
 .services-icon:before{
-  content: url('../../img/services-icon.svg');
+  background-position:0 -100px;
 }
 .navigation__item--active .main-icon:before{
-  content: url('../../img/main-icon-hover.svg');
+  background-position:0 0;
 }
 .navigation__item--active .reviews-icon:before{
-  content: url('../../img/reviews-icon-hover.svg');
+  background-position:0 -40px;
 }
 .navigation__item--active .services-icon:before{
-  content: url('../../img/services-icon-hover.svg');
+  background-position:0 -80px;
 }
 .navigation__item:hover .main-icon:before{
-  content: url('../../img/main-icon-hover.svg');
+  background-position:0 0;
 }
 .navigation__item:hover .reviews-icon:before{
-  content: url('../../img/reviews-icon-hover.svg');
-  
+  background-position:0 -40px;
 }
  .navigation__item:hover .services-icon:before{
-  content: url('../../img/services-icon-hover.svg');
+  background-position:0 -80px;
 }
