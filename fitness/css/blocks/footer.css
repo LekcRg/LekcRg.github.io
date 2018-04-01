@@ -9,7 +9,7 @@ footer{
 .footer__loftschool{
   width: 250px;
   float: left;
-  padding: 13px 0;
+  padding: 17px 0;
   line-height: 17px;
 }
 .footer__loftschool-text{
@@ -30,10 +30,13 @@ footer{
   height: 80px;
   float: left;
 }
+.footer__logo .logo{
+  height: 90px;
+}
 .footer__social{
   width: 250px;
   float: right;
-  padding: 10px 0;
+  padding: 16px 0;
 }
 .footer__social-text{
   color: #fff;
@@ -48,7 +51,7 @@ footer{
 }
 .footer__social_item{
   text-align-last: left;
-  float: right;
+  float: left;
   text-align: center;
   margin-right: 7px;
 }
