@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,700');
 @font-face{
   font-family: 'Bebas neue';
-  src: url('../../img/banner/banner-bg.png')
+  src: url('../../fonts/BebasNeue-Regular.ttf');
 }
 body, html{
   height: 100%;
