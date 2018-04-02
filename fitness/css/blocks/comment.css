@@ -25,13 +25,13 @@
 }
 input[type=text]{
   padding: 13px 9px;
-  border: none;
+  border: 1px solid transparent;
   border-radius: 5px;
 }
 textarea{
   resize: none;
   padding: 10px 6px;
-  border: none;
+  border: 1px solid transparent;
   border-radius: 5px;
   font-size: 14px;
 }
