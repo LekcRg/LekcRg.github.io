@@ -1,18 +1,29 @@
 .reviews .news__post:after{
   width: 880px;
+  margin-top: 19px;
+}
+.reviews .news__post{
+  margin-top: 0px;
+  margin-bottom: 31px;
+}
+.reviews .news__post:last-child{
+  margin-bottom: 0;
+}
+.reviews + .pagination{
+  margin-bottom: 61px;
 }
 .reviews{
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .sale-text{
   display: block;
   min-width: 700px;
   background-color: #131415;
   background-image: url(../../img/comment-text-bg.png);
-  padding: 30px 16px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 .sale-text__p{
+  padding: 22px 0 30px 16px;
   width: 700px;
   font-family: 'Open Sans';
   font-weight: lighter;

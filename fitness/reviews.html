@@ -41,7 +41,7 @@
       </div>
     </header>
     
-    <div class="container clearfix">
+    <div class="container clearfix reviews-container">
       <section class="reviews inner-page clearfix">  
         <div class="breadcrumbs">
           <ul class="breadcrumbs__list">
@@ -150,7 +150,44 @@
     <section class="sale-text">
       <p class="sale-text__p">Помимо перечисленных услуг, мы предоставляем консультации профессиональных диетологов, тренеров, психологов. Также есть кабинет массажа, зал спа рядом с бассейном и возможность арендовать центр для проведения массовых мероприятий. <strong>Ждем ваших заявок!</strong></p>
     </section>
-  </div>
+    <div class="container">
+      <section class="send-comment clearfix">
+        <h1>Оставить остзыв</h1>
+          <form name="comment" class="comment">
+            <div class="input-name input-wrapper">
+              <label class="name-input" for="comment__name">Ваше имя</label>
+              <input type="text" id="comment__name" placeholder="Алексей">
+            </div>
+            <div class="input-vk input-wrapper">
+              <label class="name-input" for="vk-name">Ссылка на профиль VK</label>
+              <input type="text" id="vk-name" placeholder="vk.com/durov">
+            </div>
+            <div class="comment__input-text-wrapper">
+              <label class="name-input" for="comment__input-text">Текст отзыва</label>
+              <textarea id="comment__textarea" placeholder="Теперь у меня руки-базуки!"></textarea>
+            </div>
+            <div class="comment__radio-wrapper">
+              <span class="comment__radio-name">Отображать фото в отзыве?</span>
+              <input type="radio" name="comment-photo" id="yes" class="comment__radio">
+              <label for="yes" class="comment__radio-text clearfix">
+                <div class="input-radio">
+                  <div class="input-radio__circle"></div>
+                </div>
+                <p class="radio-text">Да</p>
+              </label>
+              <input type="radio" name="comment-photo" id="no" class="comment__radio">
+              <label for="no" class="comment__radio-text clearfix">
+                <div class="input-radio">
+                  <div class="input-radio__circle"></div>
+                </div>
+                <p class="radio-text">Нет</p>
+              </label>
+            </div>
+            <button id="comment-send">Отправить</button>
+          </form>
+        </section>
+      </div>  
+    </div>
   <!-- конец враппера -->
 
     <footer>
