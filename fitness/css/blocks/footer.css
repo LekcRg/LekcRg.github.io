@@ -58,6 +58,7 @@ footer{
 .footer__social svg{
   fill: #d0d0d0;
   width: 20px;
+  transition: all 0.2s ease-out;
 }
 .footer__social svg:hover{
   fill: #f89513;
