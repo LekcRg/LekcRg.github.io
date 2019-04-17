@@ -59,21 +59,42 @@ body{
     -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
   }
 }
-
-.logo svg{
-	margin: auto;
-	position: absolute;
-	top: 0; left: 0; bottom: 0; right: 0;
-	height: 110px;
-}
 @media screen and (max-width: 767px){
 
 	body{
 		background-image: url(img/bg-min.jpg);
 	}
-	.logo svg{
-		width: 85%;
-		height: auto;
+
+}
+
+.text {
+	font-size: 400px;
+	font-family: 'Roboto';
+	color: rgba(255,255,255,.8);
+}
+
+.logo-wrapper {
+  position: absolute;
+	overflow: hidden;
+	margin: auto;
+}
+
+.animate {
+  animation: logo 1s linear infinite;
+	transform-origin: top right;
+	overflow: hidden;
+}
+
+@keyframes logo {
+	0% {
+		transform: scaleX(1);
 	}
 
+	50% {
+		transform: scaleX(0);
+	}
+
+	100% {
+		transform: scaleX(1);
+	}
 }
