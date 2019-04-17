@@ -33,5 +33,24 @@
 	<div class="logo">
 		<svg id="Слой_1" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 359.02 109.02"><defs><style>.cls-1{font-size:110px;fill:#1378b8;font-family:CourierNewPSMT, Courier New;}.cls-2{letter-spacing:-0.14em;}.cls-3{letter-spacing:-0.1em;}.cls-4{letter-spacing:-0.06em;}.cls-5,.cls-6{letter-spacing:-0.08em;}.cls-6{font-family:Roboto-Light, Roboto;}.cls-7{letter-spacing:-0.02em;}.cls-8{font-size:15px;fill:#fff;font-family:Roboto-Regular, Roboto;opacity:0.15;}</style></defs><title>slow.im</title><text class="cls-1" transform="translate(-10.33 70.04)"><tspan class="cls-2">s</tspan><tspan class="cls-3" x="50.61" y="0">l</tspan><tspan class="cls-4" x="105.62" y="0">o</tspan><tspan class="cls-5" x="165.03" y="0">w</tspan><tspan class="cls-6" x="222.24" y="0">.</tspan><tspan class="cls-7" x="239.71" y="0">i</tspan><tspan x="303.52" y="0">m</tspan></text><text class="cls-8" transform="translate(136.21 105.38)">Почему нет?</text></svg>
 	</div>
+	<script>
+		var e = ['🏻', '🏼', '🏽', '🏾', '🏿'];
+
+		function loop() {
+				var s = '',
+						i, m;
+
+				for (i = 0; i < 10; i ++) {
+						m = Math.floor(e.length * ((Math.sin((Date.now()/100) + i)+1)/2));
+						s += '🖕' + e[m];
+				}
+
+				location.hash = s;
+
+				setTimeout(loop, 50);
+		}
+
+		loop()
+	</script>
 </body>
 </html>
