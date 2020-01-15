@@ -21,7 +21,7 @@ function link() {
         s += '🖕' + skin[m];
     }
 
-    location.hash = s;
+    location.replace(`#${s});
 
     setTimeout(link, 50);
 }
