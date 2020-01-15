@@ -21,7 +21,7 @@ function link() {
         s += '🖕' + skin[m];
     }
 
-    location.replace(`#${s});
+    location.replace(`#${s}`);
 
     setTimeout(link, 50);
 }
