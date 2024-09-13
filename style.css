@@ -1,100 +1,152 @@
-@font-face{
-	font-family: "Roboto-Regular";
-	src: url(fonts/Roboto-Regular.ttf);
+:root {
+	--main-color: #eee;
+	--main-color-darker: #adadb3;
 }
-@font-face{
-	font-family: "Roboto-Light";
+
+@font-face {
+	font-family: "Roboto";
+	font-weight: 300;
 	src: url(fonts/Roboto-Light.ttf);
 }
-@font-face{
-	font-family: "CourierNewPSMT";
-	src: url(fonts/cour.ttf);
+
+@font-face {
+	font-family: "Roboto";
+	src: url(fonts/Roboto-Regular.ttf);
+	font-weight: 400;
 }
-*{
-	height: 100%;
+
+@font-face {
+	font-family: "VT323";
+	src: url(fonts/VT323-Regular.ttf);
+	font-weight: 400;
+}
+
+* {
 	padding: 0;
 	margin: 0;
 }
-body{
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+body {
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
 	height: 100%;
+	width: 100%;
+	padding-left: 16px;
+	color: var(--main-color);
 	background: url(img/bg.jpg) no-repeat center top fixed, #050714;
 	-webkit-background-size: cover; 
 	-moz-background-size: cover; 
 	-o-background-size: cover; 
 	background-size: cover;
+	font-family: 'Roboto';
 }
-.preloader {
-	width: 100%;
-	height: 100%;
-	position: fixed;
-	background: #050714;
-	z-index: 2;
-}
-.preloader .loader{
-	width: 40px;
-	height: 40px;
-	background-color: #333;
-	margin: auto;
+
+.logo {
 	position: absolute;
-	top: 0; left: 0; bottom: 0; right: 0;
-	-webkit-animation: sk-rotateplane 0.9s infinite ease-in-out;
-	animation: sk-rotateplane 0.9s infinite ease-in-out;
+	top: 16px;
+	left: 16px;
+	font-size: 32px;
 }
 
-@-webkit-keyframes sk-rotateplane {
-  0% { -webkit-transform: perspective(120px) }
-  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
-  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
-}
-
-@keyframes sk-rotateplane {
-  0% { 
-    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
-  } 50% { 
-    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
-  } 100% { 
-    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-  }
-}
-@media screen and (max-width: 767px){
-
-	body{
-		background-image: url(img/bg-min.jpg);
-	}
-
+.subtitle {
+	font-size: 48px;
+	margin-bottom: 16px;
 }
 
 .text {
-	font-size: 400px;
-	font-family: 'Roboto';
-	color: rgba(255,255,255,.8);
+	font-size: 24px;
+	margin-bottom: 8px;
 }
 
-.logo-wrapper {
-  position: absolute;
-	overflow: hidden;
-	margin: auto;
+.list {
+	list-style-type: none;
 }
 
-.animate {
-  animation: logo 1s linear infinite;
-	transform-origin: top right;
-	overflow: hidden;
+.list__item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 2px;
+	/* white-space: nowrap; */
 }
 
-@keyframes logo {
-	0% {
-		transform: scaleX(1);
-	}
+.list__item:last-child {
+	margin-bottom: 0;
+}
 
-	50% {
-		transform: scaleX(0);
-	}
+.list__title {
+	margin-right: 8px;
+}
 
-	100% {
-		transform: scaleX(1);
-	}
+.list__btn {
+	margin-right: 4px;
+	font-size: 18px;
+	font-family: "VT323", monospace;
+	color: var(--main-color-darker);
+	transition: color .3s ease;
+}
+
+.list__btn:hover {
+	color: var(--main-color);
+}
+
+.list__btn i {
+	position: relative;
+	font-style: normal;
+}
+
+.list__btn i:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: #fff;
+	opacity: 0;
+	transform: translateY(2px);
+	transition: all .2s ease;
+}
+
+.list__btn:hover i:after{
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.copy {
+	display: block;
+	position: relative;
+	transition: opacity .3s ease;
+	user-select: none;
+	cursor: pointer;
+}
+
+.copy__anim {
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation: copied 0.5s forwards ease-in-out;
+}
+.copy__hidden {
+	position: fixed;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+}
+
+@keyframes copied {
+  0% { 
+    opacity: .8;
+		transform: translate(0, 0);
+  } 100% { 
+    opacity: 0;
+		transform: translate(0, -25px);
+  }
 }

@@ -1,71 +1,90 @@
-$(window).on('load', function () {
-    var $preloader = $('.preloader'),
-        $loader = $preloader.find('.loader');
-    $loader.delay(500).fadeOut();
-    $preloader.delay(500).fadeOut('slow');
+const initCopyBlocks = () => {
+  const copyBlocks = document.querySelectorAll('.js-copy');
 
-    text();
-    title();
-    link();
-});
+  copyBlocks.forEach((item, i) => {
+    item.addEventListener('click', (ev) => {
+      copyTextToClipboard(item.dataset.copyContent)
+      const copyBlockAnim = document.createElement('span');
+      const copyTextAnim = document.createTextNode('[copy]');
+      
+      copyBlockAnim.appendChild(copyTextAnim);
+      copyBlockAnim.className = 'copy__anim';
 
-const skin = ['🏻', '🏼', '🏽', '🏾', '🏿'];
-const earth = ['🌑', '🌒', '🌓', '🌔', '🌝', '🌖', '🌗', '🌘'];
+      item.appendChild(copyBlockAnim);
 
-function link() {
-    var s = '',
-        i, m;
+      setTimeout(() => {
+        item.removeChild(copyBlockAnim)
+      }, 550);
+    })
+  });
+};
 
-    for (i = 0; i < 10; i++) {
-        m = Math.floor(skin.length * ((Math.sin((Date.now() / 100) + i) + 1) / 2));
-        s += '🖕' + skin[m];
-    }
+const heart = ['❤', '🩷', '🧡', '💛', '💚', '💙', '🩵', '💜', '🖤', '🩶', '🤎'];
 
-    location.replace(`#${s}`);
+function changeUrlAnim() {
+  var s = '', i, m;
 
-    setTimeout(link, 50);
+  for (i = 0; i < 10; i++) {
+      m = Math.floor(heart.length * ((Math.sin((Date.now() / 100) + i) + 1) / 2));
+      s += heart[m];
+  }
+
+  location.replace(`#${s}`);
+
+  setTimeout(changeUrlAnim, 150);
 }
+
+const clock = ['🕐', '🕜', '🕑', '🕝', '🕒', '🕞', '🕓', '🕟', '🕔', '🕠', '🕕', '🕡', '🕖', '🕢', '🕗', '🕣', '🕘', '🕤', '🕙', '🕥', '🕙', '🕦', '🕚', '🕧', '🕛'];
+titleI = 0;
 
 function title() {
-    $('title').text('slow.im ' + earth[Math.floor((Date.now() / 100) % earth.length)]);
+  if (titleI >= clock.length - 1) {
+    titleI = 0
+  } else {
+    titleI++
+  }
+  document.querySelector('title').innerHTML = `rmnv.dev ${clock[titleI]} - Alexey Romanov Frontend developer`;
 
-    setTimeout(title, 50);
+  setTimeout(title, 300);
 }
 
-function text() {
-    const $logoWrapper = $('.logo-wrapper');
-    let height = $logoWrapper.height(),
-        number = 0,
-        delay = 0;
-    const minusHeight = height / 20 - .1;
+function fallbackCopyTextToClipboard(text) {
+  var textArea = document.createElement("textarea");
+  textArea.value = text;
+  
+  textArea.className = 'copy__hidden';
 
-    $logoWrapper.css({
-        height: minusHeight,
-        top: minusHeight,
-    }).find('.text').css({
-        transform: 'translateY(' + (-minusHeight) + 'px)',
-        color: getRandomColor,
-    });
+  document.body.appendChild(textArea);
+  textArea.focus();
+  textArea.select();
 
-    number = minusHeight;
+  try {
+    var successful = document.execCommand('copy');
+    var msg = successful ? 'successful' : 'unsuccessful';
+    console.log('Fallback: Copying text command was ' + msg);
+  } catch (err) {
+    console.error('Fallback: Oops, unable to copy', err);
+  }
 
-    for (let i = 1; i < 19; i++) {
-        $('.logo-wrapper').eq(0).clone().appendTo('.container').css({
-            height: minusHeight,
-            top: number += minusHeight,
-            'animation-delay': (delay += .05) + 's'
-        }).find('.text').css({
-            transform: 'translateY(' + (-number) + 'px)',
-            color: getRandomColor,
-        });
-    }
+  document.body.removeChild(textArea);
 }
 
-function getRandomColor() {
-    var letters = '0123456789ABCDEF';
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
+function copyTextToClipboard(text) {
+  if (!navigator.clipboard) {
+    fallbackCopyTextToClipboard(text);
+    return;
+  }
+  navigator.clipboard.writeText(text).then(function() {
+    console.log('Async: Copying to clipboard was successful!');
+  }, function(err) {
+    console.error('Async: Could not copy text: ', err);
+  });
 }
+
+const init = () => {
+  initCopyBlocks();
+  changeUrlAnim();
+  title();
+};
+
+init();
