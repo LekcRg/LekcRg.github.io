@@ -43,7 +43,7 @@ function title() {
   } else {
     titleI++
   }
-  document.querySelector('title').innerHTML = `rmnv.dev ${clock[titleI]} - Alexey Romanov Frontend developer`;
+  document.querySelector('title').innerHTML = `Webeefy.com ${clock[titleI]} - Alexey Romanov Frontend developer`;
 
   setTimeout(title, 300);
 }
