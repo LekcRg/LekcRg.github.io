@@ -16,5 +16,10 @@ export async function onRequest(context) {
         el.setInnerContent("Webeefy.com", { html: false });
       }
     })
+    .on("title", {
+      element(el) {
+        el.setInnerContent("Webeefy.com - Alexey Romanov Backend Go Developer", { html: false });
+      }
+    })
     .transform(originResp);
 }
