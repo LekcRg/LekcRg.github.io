@@ -6,7 +6,7 @@ const initCopyBlocks = () => {
       copyTextToClipboard(item.dataset.copyContent)
       const copyBlockAnim = document.createElement('span');
       const copyTextAnim = document.createTextNode('[copy]');
-      
+
       copyBlockAnim.appendChild(copyTextAnim);
       copyBlockAnim.className = 'copy__anim';
 
@@ -19,39 +19,48 @@ const initCopyBlocks = () => {
   });
 };
 
-const heart = ['❤', '🩷', '🧡', '💛', '💚', '💙', '🩵', '💜', '🖤', '🩶', '🤎'];
-
 function changeUrlAnim() {
-  var s = '', i, m;
+  const run = '🏃';
+  const runBack = '🏃‍➡';
+  const gap = '-'
+  const maxLen = 20;
 
-  for (i = 0; i < 10; i++) {
-      m = Math.floor(heart.length * ((Math.sin((Date.now() / 100) + i) + 1) / 2));
-      s += heart[m];
-  }
+  let gapLen = maxLen;
+  let isBack = false;
+  const interval = setInterval(() => {
+    if (gapLen < 0) {
+      isBack = true;
+      gapLen++;
+    } else if (gapLen > maxLen) {
+      isBack = false;
+      gapLen--;
+    }
 
-  location.replace(`#${s}`);
-
-  setTimeout(changeUrlAnim, 150);
+    const emoji = isBack ? runBack : run;
+    urlHash = gap.repeat(gapLen) + emoji + gap.repeat(maxLen - gapLen);
+    location.replace(`#${urlHash}`);
+    isBack ? gapLen++ : gapLen--;
+  }, 100)
 }
 
-const clock = ['🕐', '🕜', '🕑', '🕝', '🕒', '🕞', '🕓', '🕟', '🕔', '🕠', '🕕', '🕡', '🕖', '🕢', '🕗', '🕣', '🕘', '🕤', '🕙', '🕥', '🕙', '🕦', '🕚', '🕧', '🕛'];
-titleI = 0;
+// const clock = ['🕐', '🕜', '🕑', '🕝', '🕒', '🕞', '🕓', '🕟', '🕔', '🕠', '🕕', '🕡', '🕖', '🕢', '🕗', '🕣', '🕘', '🕤', '🕙', '🕥', '🕙', '🕦', '🕚', '🕧', '🕛'];
+// titleI = 0;
 
-function title() {
-  if (titleI >= clock.length - 1) {
-    titleI = 0
-  } else {
-    titleI++
-  }
-  document.querySelector('title').innerHTML = `rmnv.dev ${clock[titleI]} - Alexey Romanov Frontend developer`;
+// function title() {
+//   if (titleI >= clock.length - 1) {
+//     titleI = 0
+//   } else {
+//     titleI++
+//   }
+//   document.querySelector('title').innerHTML = `rmnv.dev ${clock[titleI]} - Alexey Romanov Backend Go Developer`;
 
-  setTimeout(title, 300);
-}
+//   setTimeout(title, 300);
+// }
 
 function fallbackCopyTextToClipboard(text) {
   var textArea = document.createElement("textarea");
   textArea.value = text;
-  
+
   textArea.className = 'copy__hidden';
 
   document.body.appendChild(textArea);
@@ -74,9 +83,9 @@ function copyTextToClipboard(text) {
     fallbackCopyTextToClipboard(text);
     return;
   }
-  navigator.clipboard.writeText(text).then(function() {
+  navigator.clipboard.writeText(text).then(function () {
     console.log('Async: Copying to clipboard was successful!');
-  }, function(err) {
+  }, function (err) {
     console.error('Async: Could not copy text: ', err);
   });
 }
@@ -84,7 +93,23 @@ function copyTextToClipboard(text) {
 const init = () => {
   initCopyBlocks();
   changeUrlAnim();
-  title();
+
+  const gopher =
+    '           ´.-::::::-.´\n' +
+    '      .:-::::::::::::::-:.\n' +
+    '      ´_:::    ::    :::_´\n' +
+    '       .:( ^   :: ^   ):.\n' +
+    '       ´:::   (..)   :::.\n' +
+    '       ´:::::::UU:::::::´\n' +
+    '       .::::::::::::::::.\n' +
+    '       O::::::::::::::::O\n' +
+    '       -::::::::::::::::-\n' +
+    '       ´::::::::::::::::´\n' +
+    '        .::::::::::::::.\n' +
+    '          oO:::::::Oo';
+
+  console.log(gopher)
+  console.log('ʕ◔ϖ◔ʔ')
 };
 
 init();
